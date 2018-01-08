@@ -12,7 +12,7 @@ class PrimeFactorsTest {
 
   @Test
   public void testFactorsOfOne() {
-    assertEquals(list(), PrimeFactors.calculuate(1));
+    assertEquals(list(), PrimeFactors.calculate(1));
   }
 
   private List<Integer> list(int...ints) {
