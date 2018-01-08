@@ -45,6 +45,16 @@ class PrimeFactorsTest {
     assertEquals(list(3, 3), PrimeFactors.calculate(9));
   }
 
+  @Test
+  public void testFactorsOfTwentySeven() {
+    assertEquals(list(3, 3, 3), PrimeFactors.calculate(27));
+  }
+
+  @Test
+  public void testFactorsOfSixHundredTwentyFive() {
+    assertEquals(list(5, 5, 5, 5), PrimeFactors.calculate(625));
+  }
+
 
   private List<Integer> list(int...ints) {
     ArrayList<Integer> list = new ArrayList<Integer>();
