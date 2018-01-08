@@ -10,7 +10,7 @@ public class PrimeFactors {
     int possibleFactors = 2;
     while (number > 1) {
       while (number % possibleFactors == 0) {
-        factors.add(number);
+        factors.add(possibleFactors);
         number /= possibleFactors;
       }
       possibleFactors++;
