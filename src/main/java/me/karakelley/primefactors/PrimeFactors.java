@@ -7,13 +7,13 @@ public class PrimeFactors {
 
   public static List<Integer> calculate(int number) {
     ArrayList<Integer> factors = new ArrayList<Integer>();
-    int possibleFactors = 2;
+    int possibleFactor = 2;
     while (number > 1) {
-      while (number % possibleFactors == 0) {
-        factors.add(possibleFactors);
-        number /= possibleFactors;
+      while (number % possibleFactor == 0) {
+        factors.add(possibleFactor);
+        number /= possibleFactor;
       }
-      possibleFactors++;
+      possibleFactor++;
     }
     return factors;
   }
