@@ -30,6 +30,12 @@ class PrimeFactorsTest {
     assertEquals(list(2, 2), PrimeFactors.calculate(4));
   }
 
+  @Test
+  public void testFactorsOfSix() {
+    assertEquals(list(2, 3), PrimeFactors.calculate(6));
+  }
+
+
   private List<Integer> list(int...ints) {
     ArrayList<Integer> list = new ArrayList<Integer>();
     for ( int i : ints) {
