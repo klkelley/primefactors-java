@@ -15,7 +15,12 @@ class PrimeFactorsTest {
   static Collection<Object[]> data() {
     return Arrays.asList(new Object[][] {
             {1, Collections.emptyList()},
-            {2, Collections.singletonList(2)}
+            {2, Collections.singletonList(2)},
+            {4, Arrays.asList(2, 2)},
+            {8, Arrays.asList(2, 2, 2)},
+            {9, Arrays.asList(3, 3)},
+            {27, Arrays.asList(3, 3, 3)},
+            {625, Arrays.asList(5, 5, 5, 5)}
     });
   }
 
