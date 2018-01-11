@@ -1,6 +1,5 @@
 package me.karakelley.primefactors;
 
-
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.MethodSource;
 
@@ -19,7 +18,10 @@ class PrimeFactorsTest {
             {2, Collections.singletonList(2)},
             {4, Arrays.asList(2, 2)},
             {6, Arrays.asList(2, 3)},
-            {8, Arrays.asList(2, 2, 2)}
+            {8, Arrays.asList(2, 2, 2)},
+            {9, Arrays.asList(3, 3)},
+            {27, Arrays.asList(3, 3, 3)},
+            {625, Arrays.asList(5, 5, 5, 5)}
     });
   }
 
