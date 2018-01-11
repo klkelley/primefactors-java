@@ -7,6 +7,9 @@ public class PrimeFactors {
 
   public static List<Integer> calculate(int number) {
     ArrayList<Integer> primeFactors = new ArrayList<Integer>();
+    if (number > 1) {
+      primeFactors.add(2);
+    }
     return primeFactors;
   }
 }
